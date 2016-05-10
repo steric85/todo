@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="todolist">
+	<head>
+		<title>ToDo</title>	
+		<link rel="stylesheet" type="text/css" href="style.css">	
+	</head>
+	<body ng-controller="ListController as list">
+		<h2>My Task List</h2>
+		
+		<input type="text" placeholder="Task Name" ng-model="list.taskname"/>
+		<button type ="button" ng-click=list.addTask() >Add Task</button>
+
+		<br>
+
+		<displayDirective></displayDirective>
+		<script type="text/javascript" src="../angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
