@@ -11,8 +11,10 @@
 		<button type ="button" ng-click=list.addTask() >Add Task</button>
 
 		<br>
+		<span ng-repeat="task in list.taskList">
+			<br><input type="checkbox" ng-model="task.done" ><span class="done-{{task.done}}">{{task.taskName}}</span><br>
+		</span>
 
-		<displayDirective></displayDirective>
 		<script type="text/javascript" src="../angular.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
