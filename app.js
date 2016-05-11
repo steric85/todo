@@ -20,7 +20,6 @@
 		{
 			return task.done;
 		};
-
 		this.addTask=function(){
 			
 			this.taskList.push({
@@ -30,6 +29,5 @@
 			this.taskname="";
 		}
 	});
-
-
+	
 })();
